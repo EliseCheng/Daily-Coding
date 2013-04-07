@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	char str[255];
+	while(1)
+	{
+		printf("input your string('q' for quit):\n");
+		gets(str);
+		if(str[0] == 'q')
+		{
+			printf("exit...\n");
+			exit(0);
+		}
+		printf("%s\n", str);
+	}
+	return 0;
+}
