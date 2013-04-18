@@ -3,7 +3,7 @@
 import imaplib
 
 M = imaplib.IMAP4()
-M.login("alice.cheng@neudigit.com", "XINYISOFT.com")
+M.login("alice.cheng@neudigit.com", "*****")
 M.select()
 typ, date = M.search(None, "ALL")
 for num in data[0].split():
