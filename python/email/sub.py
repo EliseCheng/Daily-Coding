@@ -11,8 +11,8 @@ browser = webdriver.Firefox()
 browser.get("https://staging.acdid.acdsystems.com/ACDID/admin/login.php")
 
 #login
-browser.find_element_by_id("email").send_keys("antony.zhu@neudigit.com")
-browser.find_element_by_id("password").send_keys("12345")
+browser.find_element_by_id("email").send_keys()
+browser.find_element_by_id("password").send_keys("")
 browser.find_element_by_xpath("//input[@type='submit']").click()
 
 #Open Test Tools
