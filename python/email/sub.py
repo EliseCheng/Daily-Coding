@@ -20,7 +20,14 @@ browser.get("testtools.php?am=6")
 browser.find_element_by_id("cur_sub_date").send_keys("2013-04-19")
 browser.find_element_by_name("sen_sub_emails").click()
 
-def get_sub_date(create_date):
+#Send expiration soon email
+for expiration_date in expiration_dates:
+	send_keys(expiration_date)
+	click()
+
+#Check emails 
+#Check different languages
+#print subject	
 	
 	
 
