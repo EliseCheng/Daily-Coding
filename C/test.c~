@@ -15,7 +15,7 @@ int main()
 {
 	//printf("%d, %d, %d", sizeof(int), sizeof(char), sizeof(float));
 	int x = 10;
-	x &= 10;
+	x &= 4;
 	char a;
 	a = (01 & 1); //+ '0';
 	printf("%d, %p\n", x, &a);

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#! /usr/bin/python
 # example of python docs
 import imaplib
 

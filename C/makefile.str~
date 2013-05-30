@@ -1,0 +1,8 @@
+obj = str_test.o
+str_test: $(obj)
+	cc -o $(obj)
+
+$(obj): src_test.h
+
+clean:
+	rm str_test $(obj)

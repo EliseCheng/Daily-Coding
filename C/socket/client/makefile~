@@ -1,0 +1,6 @@
+OBJ = client.o
+client:$(OBJ)
+	cc -o client $(OBJ)
+#隐晦规则,能自动推导出client.o cc -c client.c
+clean:
+	rm client $(OBJ)

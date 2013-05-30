@@ -1,0 +1,9 @@
+OBJ = exec13_1.o
+CFLAGS = -g -o
+exec: $(OBJ)
+	cc $(CFLAGS) exec $(OBJ)
+
+$(OBJ): exec13_1.h
+
+clean:
+	rm exec $(OBJ)
