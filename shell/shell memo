@@ -1,0 +1,69 @@
+#查找非隐藏文件
+ls |grep -n '^[^\.]' 
+
+#根据执行权限查找
+find ./-type f -perm -775
+
+#函数递归调用
+searchFolder()
+{
+	cd $1
+	for filename in `ls`
+	do
+  	if [ -f $filename ] 
+		then
+  	  echo $filename >> $OUTPUT
+  	  grep "project" *.xml >> $OUTPUT 
+  	  echo "=============================" >> $OUTPUT
+  	elif [ -d $filename ]
+		then
+			#echo "sub--$1"
+			searchFolder $filename
+		fi
+	done
+	cd ../
+}
+
+echo "..." >> $OUTPUT
+searchFolder www
+
+
+
+#关于日期处理
+read -p "Input your birthday date:(MMDD, ex>0709)" birth
+now=`date +%m%d`
+echo $birth
+if [ "$now" == "$birth" ]
+then 
+echo "Happy birthday to you."
+elif [ "$birth" -gt "$now" ]
+then 
+year=`date +%Y`
+total_d=$(($((`date --date="$year$birth" +%s`-`date +%s`))/60/60/24))
+elif [ "$birth" -lt "$now" ]
+then
+year=`date +%Y`
+year=$(($year+1))
+total_d=$(($((`date --date="$year$birth" +%s`-`date +%s`))/60/60/24))
+#echo $year
+fi
+echo $total_d
+
+
+
+
+#case的用法：
+case $op2 in
+	+ )
+		echo $(($op1 + $op3))
+	;;
+	/ )
+		if [ "$op3" == "0" ]
+		then
+			echo "zero is invalid"
+		fi
+	;;
+	* )
+		echo "invalid operation"
+	;;
+esac
