@@ -3,6 +3,7 @@ from django.template.loader import get_template
 from django.template import Context
 from django.shortcuts import render_to_response
 import datetime
+import os
 
 def  current_datetime(request):
     now = datetime.datetime.now()
@@ -11,6 +12,11 @@ def  current_datetime(request):
     return HttpResponse(html)
 
 def cmd_exec(request):
+    result = ''
     if request.method == 'POST':
-        print request.cmd.value
-    return render_to_response("cmd.html", { "result" : "test" })
+        cmd = request.POST.get('cmd')
+        result = os.popen(cmd).read()
+    return render_to_response('cmd.html', {'result': result})
+
+def chart(request):
+    return render_to_response('chart.html')
