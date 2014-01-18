@@ -61,6 +61,10 @@ int main()
 			printf("send error.. %s", strerror(errno));
 			exit(1);
 		}
+		
+		char buf[255];
+		recv(new_sockfd, buf, 255, 0);
+		printf("server: rev -- %s\n", buf);
 
 	}
 	
