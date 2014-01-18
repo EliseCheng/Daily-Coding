@@ -1,0 +1,57 @@
+function OAS_RICH(position) {
+if (position == 'x01') {
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('		\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('<script type="text/javascript">\n');
+document.write ('//<![CDATA[\n');
+document.write ('var filePath                     = "http://imagec14.247realmedia.com/RealMedia/ads/Creatives/MilesMedia/was_13_ROS_BellevueCollection_300x250/VisitWA_300x250.swf/1357232966";\n');
+document.write ('var TFSMFlash_PRETAG             = "";\n');
+document.write ('var TFSMFlash_POSTTAG            = "";\n');
+document.write ('var TFSMFlash_VERSION            = "9";\n');
+document.write ('var TFSMFlash_WMODE              = "window";\n');
+document.write ('\n');
+document.write ('			var TFSMFlash_OASCLICK           = "http://oasc02006.247realmedia.com/RealMedia/ads/click_lx.ads/www.experiencewa.com/home/L25/175805704/x01/MilesMedia/was_13_ROS_BellevueCollection_300x250/was_13_ROS_BellevueCollection_300x250.html/462f524236314b484436344143634474";\n');
+document.write ('	\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('var TFSMFlash_SWFCLICKVARIABLE   = "?clickTAG="+TFSMFlash_OASCLICK + "";\n');
+document.write ('var TFSMFlash_SWFFILE            = filePath + TFSMFlash_SWFCLICKVARIABLE;\n');
+document.write ('var TFSMFlash_FSCOMMAND          = "";\n');
+document.write ('var TFSMFlash_IMAGEALTERNATE     = "http://imagec14.247realmedia.com/RealMedia/ads/Creatives/MilesMedia/was_13_ROS_BellevueCollection_300x250/VisitWA_300x250gif.gif/1357232966";\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('var TFSMFlash_OASALTTEXT         = "";\n');
+document.write ('var TFSMFlash_OASTARGET          = "_blank";\n');
+document.write ('var TFSMFlash_OASPROTOCOL        = "http://";\n');
+document.write ('var TFSMFlash_OASDIM             = "width=');
+document.write ("'");
+document.write ('300px');
+document.write ("'");
+document.write (' height=');
+document.write ("'");
+document.write ('250px');
+document.write ("'");
+document.write ('";\n');
+document.write ('var TFSMFlash_OASADID            = "OAS_RMF_x01_FLASH";\n');
+document.write ('document.write("<"+"scr"+"ipt type=\\');
+document.write ('"text/javascript\\');
+document.write ('" src=\\');
+document.write ('"http://imagec14.247realmedia.com/RealMedia/ads/Creatives/MilesMedia/was_13_ROS_BellevueCollection_300x250/TFSMFlashWrapper301.js/1357232966\\');
+document.write ('"><\\');
+document.write ('/scr"+"ipt"+">");\n');
+document.write ('//]]>\n');
+document.write ('</script>\n');
+document.write ('<noscript>\n');
+document.write ('	<a href="http://oasc02006.247realmedia.com/RealMedia/ads/click_lx.ads/www.experiencewa.com/home/L25/175805704/x01/MilesMedia/was_13_ROS_BellevueCollection_300x250/was_13_ROS_BellevueCollection_300x250.html/462f524236314b484436344143634474" target="_blank">\n');
+document.write ('		<img src="http://imagec14.247realmedia.com/RealMedia/ads/Creatives/MilesMedia/was_13_ROS_BellevueCollection_300x250/VisitWA_300x250gif.gif/1357232966" width="300" height="250" alt="" style="border:0px black solid;" />\n');
+document.write ('	</a>\n');
+document.write ('</noscript>\n');
+document.write ('\n');
+document.write ('\n');
+}
+}
