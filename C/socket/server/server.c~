@@ -62,7 +62,7 @@ int main()
 			exit(1);
 		}
 		
-		char buf[255];
+		char buf[BUF_LEN];
 		recv(new_sockfd, buf, 255, 0);
 		printf("server: rev -- %s\n", buf);
 

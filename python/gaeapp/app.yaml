@@ -1,0 +1,12 @@
+application: hsmimi2005001
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /.*
+  script: hello.py
+
+inbound_services:
+- warmup
+
