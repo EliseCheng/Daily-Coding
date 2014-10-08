@@ -10,4 +10,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'soil.views.index', name='index'),
+    url(r'^upload/$', 'soil.views.upload', name='upload'),
 )
