@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'bootstrap3',
 
     'soil',
+    'swift',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -83,8 +84,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
+STATIC_ROOT = os.path.join(PACKAGE_ROOT, "static")
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(PACKAGE_ROOT, "static"),
+    os.path.join(STATIC_ROOT, "static"),
 ]
