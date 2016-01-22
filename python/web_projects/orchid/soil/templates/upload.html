@@ -1,0 +1,13 @@
+{% extends "site_base.html" %}
+{% load bootstrap3 %}
+{% block content %}
+<form action="/url/to/submit/" method="post" class="form">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+</form>
+<iframe id="uploadframe" name="result_frame"   style="visibility:hidden;"></iframe>
+{% endblock %}
+
+{% block extra_script %}
+    <script type="text/javascript" src="{% static " js/ajaxfileupload.js"></script>
+{% endblock %}
