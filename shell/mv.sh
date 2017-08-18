@@ -1,6 +1,3 @@
 #!/bin/bash
-for fexec in `find $SRC/C -type f -perm -775`
-do
-	echo $fexec
-	cp $fexec $BIN
-done
+ sed -i '$a auto eth1' a.txt
+ sed -i '$a iface eth1 inet dhcp' a.txt

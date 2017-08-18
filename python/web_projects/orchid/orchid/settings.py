@@ -28,6 +28,7 @@ ALLOWED_HOSTS = []
 
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -89,5 +90,5 @@ STATIC_ROOT = os.path.join(PACKAGE_ROOT, "static")
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(STATIC_ROOT, "static"),
+    os.path.join(PACKAGE_ROOT, "media", "static"),
 ]

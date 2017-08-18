@@ -1,0 +1,12 @@
+aaaa
+#test
+#test
+#text
+
+#tefdf
+auto eth1
+iface eth1 inet dhcp
+auto eth5
+iface eth5 inet dhcp
+auto eth1
+iface eth1 inet dhcp
